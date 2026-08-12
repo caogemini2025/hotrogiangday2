@@ -396,7 +396,7 @@
     #scheduleSection .table-wrap{overflow-x:hidden}
     #scheduleTable{width:100%;min-width:0;table-layout:fixed}
     #scheduleTable col.col-time{width:70px}
-    #scheduleTable col.col-content{width:267px}
+    #scheduleTable col.col-content{width:200px}
     #scheduleTable col.col-chair{width:64px}
     #scheduleTable col.col-participants{width:150px}
     #scheduleTable col.col-conflict{width:54px}
@@ -407,7 +407,7 @@
     #scheduleTable col.col-actions{width:68px}
     #scheduleTable th,#scheduleTable td{padding:8px 6px;font-size:11px;line-height:1.35;overflow-wrap:anywhere;word-break:break-word}
     #scheduleTable th{font-size:10px;letter-spacing:0;text-transform:none;vertical-align:middle}
-    #scheduleTable .cell-content{width:267px;max-width:267px}
+    #scheduleTable .cell-content{width:200px;max-width:200px}
     #scheduleTable .cell-participants{width:150px;max-width:150px}
     #scheduleTable .cell-time{text-align:center}
     #scheduleTable .cell-time strong{display:block;color:var(--blue)}
@@ -418,42 +418,14 @@
     #scheduleTable .actions .btn{min-width:27px;width:27px;height:27px;padding:0;margin:1px;font-size:10px}
     #scheduleTable .cell-status .badge{white-space:normal;padding:4px 6px;font-size:9px}
     #scheduleTable .cell-status .progress{margin-top:6px;height:6px}
-    #scheduleTable .week-group-row td{padding:0;background:#166534!important;color:#fff;border-right:0;font-size:12px}
-    #scheduleTable .week-group-row.week-tone-1 td{background:#2f855a!important}
+    #scheduleTable .week-group-row td{padding:9px 10px;background:#166534!important;color:#fff;border-right:0;font-size:12px}
     #scheduleTable .week-group{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
     #scheduleTable .week-group strong{font-size:13px}
     #scheduleTable .week-group .group-meta{opacity:.86;font-size:10px}
-    #scheduleTable .week-toggle{width:100%;padding:9px 10px;border:0;background:transparent;color:inherit;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;cursor:pointer;font:inherit}
-    #scheduleTable .week-toggle-main{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-    #scheduleTable .week-toggle-icon{margin-left:auto;transition:transform .18s ease}
-    #scheduleTable .week-toggle[aria-expanded="true"] .week-toggle-icon{transform:rotate(180deg)}
-    #scheduleTable .week-detail-row.week-collapsed{display:none!important}
     #scheduleTable .day-group-row td{padding:7px 10px;background:#dcfce7!important;color:#14532d;border-right:0}
-    #scheduleTable .day-group-row{border-left:4px solid var(--week-accent,#166534)}
     #scheduleTable .day-group{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
     #scheduleTable .day-group strong{font-size:12px}
     #scheduleTable .day-count{font-size:10px;font-weight:800;color:#15803d}
-    #scheduleTable .week-tone-0{--week-accent:#166534}
-    #scheduleTable .week-tone-1{--week-accent:#68a37a}
-    #scheduleTable .day-tone-0{--day-bg:#f0fdf4}
-    #scheduleTable .day-tone-1{--day-bg:#eff6ff}
-    #scheduleTable .day-tone-2{--day-bg:#fffbeb}
-    #scheduleTable .day-tone-3{--day-bg:#fdf4ff}
-    #scheduleTable .day-tone-4{--day-bg:#f0fdfa}
-    #scheduleTable .day-tone-5{--day-bg:#fff7ed}
-    #scheduleTable .day-tone-6{--day-bg:#f5f3ff}
-    #scheduleTable .day-group-row.day-tone-0 td{background:#dcfce7!important;color:#14532d}
-    #scheduleTable .day-group-row.day-tone-1 td{background:#dbeafe!important;color:#1e40af}
-    #scheduleTable .day-group-row.day-tone-2 td{background:#fef3c7!important;color:#92400e}
-    #scheduleTable .day-group-row.day-tone-3 td{background:#fae8ff!important;color:#86198f}
-    #scheduleTable .day-group-row.day-tone-4 td{background:#ccfbf1!important;color:#115e59}
-    #scheduleTable .day-group-row.day-tone-5 td{background:#ffedd5!important;color:#9a3412}
-    #scheduleTable .day-group-row.day-tone-6 td{background:#ede9fe!important;color:#5b21b6}
-    #scheduleTable .schedule-row:not(.k1-attention-row)>td{background:var(--day-bg,#fff)}
-    #scheduleTable .schedule-row.session-morning>td{color:#14532d}
-    #scheduleTable .schedule-row.session-morning .cell-time strong{color:#166534}
-    #scheduleTable .schedule-row.session-afternoon>td{color:#1e40af}
-    #scheduleTable .schedule-row.session-afternoon .cell-time strong{color:#2563eb}
 
     @media (max-width:1280px){
       #scheduleSection .filters{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -463,7 +435,7 @@
       #scheduleTable colgroup,#scheduleTable thead{display:none}
       #scheduleTable .week-group-row,#scheduleTable .day-group-row{display:block;margin-top:12px}
       #scheduleTable .week-group-row td,#scheduleTable .day-group-row td{display:block;width:100%;max-width:none;border-radius:12px;border:0}
-      #scheduleTable .schedule-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:10px 0 16px;padding:8px;background:var(--day-bg,#fff);border:1px solid var(--gray-200);border-radius:16px;box-shadow:0 6px 18px rgba(15,23,42,.07)}
+      #scheduleTable .schedule-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:10px 0 16px;padding:8px;background:#fff;border:1px solid var(--gray-200);border-radius:16px;box-shadow:0 6px 18px rgba(15,23,42,.07)}
       #scheduleTable .schedule-row td{display:grid;grid-template-columns:105px minmax(0,1fr);gap:8px;width:auto!important;max-width:none!important;min-width:0;padding:8px;border-right:0;background:transparent!important}
       #scheduleTable .schedule-row td::before{content:attr(data-label);font-size:10px;font-weight:850;color:var(--gray-500);text-transform:uppercase;letter-spacing:.025em}
       #scheduleTable .schedule-row .cell-content,#scheduleTable .schedule-row .cell-participants,#scheduleTable .schedule-row .cell-report,#scheduleTable .schedule-row .cell-actions{grid-column:1/-1}
@@ -489,10 +461,6 @@
       #scheduleTable .schedule-row .actions::before{flex-basis:96px}
       #scheduleTable .week-group{align-items:flex-start}
       #scheduleTable .day-group{align-items:flex-start}
-    }
-
-    @media print{
-      #scheduleTable .week-detail-row.week-collapsed{display:table-row!important}
     }
 
 </style>
@@ -944,7 +912,7 @@
           </div>
           <div class="field span-2">
             <label>Quân số</label>
-            <input id="fMorningInfo" class="input" placeholder="Nhập tình hình quân số hoặc để trống để tự động tổng hợp">
+            <input id="fMorningInfo" class="input" readonly placeholder="Tự động tổng hợp từ báo cáo quân số vắng">
           </div>
 
           <div class="field span-4">
@@ -1182,7 +1150,6 @@
     let currentScheduleMode = 'official';
     let scheduleEditMode = 'base';
     let scheduleEditorOpen = false;
-    const scheduleWeekExpanded = new Map();
     let pendingDelete = null;
     function splitStatisticPeople(value=''){return [...new Set(String(value).replace(/,\s*Ca\s*[12](?:\s*\([^)]*\))?/gi,'').split(/[,;\n]+|\s+và\s+/i).map(name=>name.trim()).filter(Boolean).flatMap(name=>normalizeExcelHeader(name)==='toan k1'?currentK1Roster():[name]))]}
     function scheduleStatisticPeople(item){return splitStatisticPeople([item.chair,item.participants,item.delegates,item.duty,item.schoolDuty].filter(Boolean).join(','))}
@@ -1293,7 +1260,6 @@
     function isTonghop(){return currentUser?.role==='admin'&&['all','hanhchinh'].includes(currentUser?.scope)}
     function isPersonalViewer(){return currentUser?.role==='admin'&&currentUser?.scope==='personal'}
     function canUpdateOutcome(item){return isTonghop()||isPersonalViewer()}
-    function canEditHeadcount(){return !!currentUser}
     function canDeleteAttendance(item){return isTonghop()||(isPersonalViewer()&&item&&personIdentity(item.name)===personIdentity(currentUser.name))}
     function isLeader(){return false}
     function canSeeDraft(){return isTonghop()||isLeader()||isPersonalViewer()}
@@ -1386,15 +1352,8 @@
       return activeSchedules();
     }
 
-    function scheduleWeekTimestamp(dateStr){
-      const date=new Date(String(dateStr||'').slice(0,10)+'T12:00:00');
-      if(Number.isNaN(date.getTime()))return 0;
-      date.setDate(date.getDate()-((date.getDay()+6)%7));
-      return date.getTime();
-    }
-
     function populateFilters(){
-      const weeks=[...new Set(getVisibleSchedules().map(x=>getWeekNumber(x.date)).filter(Boolean))].sort((a,b)=>b-a);
+      const weeks=[...new Set(getVisibleSchedules().map(x=>getWeekNumber(x.date)).filter(Boolean))].sort((a,b)=>a-b);
       const fw=document.getElementById('filterWeek');
       const selected=fw.value;
       fw.innerHTML='<option value="">Tất cả tuần</option>'+weeks.map(w=>`<option value="${w}">Tuần ${w}</option>`).join('');
@@ -1425,7 +1384,7 @@
           && (!session || x.session===session)
           && (!status || x.status===status)
           && (lecturerScope.scope==='all'||scheduleStatisticPeople(x).some(name=>lecturerScope.keys.has(personIdentity(name))));
-      }).sort((a,b)=>scheduleWeekTimestamp(b.date)-scheduleWeekTimestamp(a.date)||String(a.date||'').localeCompare(String(b.date||''))||(['morning','afternoon','evening','all'].indexOf(warningBucket(a.session)))-(['morning','afternoon','evening','all'].indexOf(warningBucket(b.session)))||String(a.start||'').localeCompare(String(b.start||'')));
+      }).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||(['morning','afternoon','evening','all'].indexOf(warningBucket(a.session)))-(['morning','afternoon','evening','all'].indexOf(warningBucket(b.session)))||String(a.start||'').localeCompare(String(b.start||'')));
 
       currentPage=1;
       renderTable();
@@ -1439,12 +1398,6 @@
       adminLecturerFilterChanged();
     }
 
-    function toggleScheduleWeek(encodedWeekKey){
-      const weekKey=decodeURIComponent(encodedWeekKey);
-      scheduleWeekExpanded.set(weekKey,!scheduleWeekExpanded.get(weekKey));
-      renderTable();
-    }
-
     function renderTable(){
       const tbody=document.getElementById('scheduleBody');
       const pageRows=filteredData;
@@ -1453,29 +1406,22 @@
         tbody.innerHTML=`<tr class="empty-row"><td colspan="11"><div class="empty"><i class="fa-regular fa-folder-open"></i><div>Không có dữ liệu phù hợp</div></div></td></tr>`;
       } else {
         const dayCounts=pageRows.reduce((map,item)=>map.set(item.date,(map.get(item.date)||0)+1),new Map());
-        const weekKeys=[...new Set(pageRows.map(item=>{const info=academicInfo(item.date);return `${info.filterKey}|${getWeekNumber(item.date)}`}))];
-        weekKeys.forEach((key,index)=>{if(!scheduleWeekExpanded.has(key))scheduleWeekExpanded.set(key,index===0)});
-        const weekIndexes=new Map(weekKeys.map((key,index)=>[key,index]));
         const rows=[];
         let previousWeek='';
         let previousDate='';
         pageRows.forEach(x=>{
           const info=academicInfo(x.date),week=getWeekNumber(x.date),weekKey=`${info.filterKey}|${week}`;
-          const weekIndex=weekIndexes.get(weekKey)||0,weekTone=`week-tone-${weekIndex%2}`;
-          const expanded=scheduleWeekExpanded.get(weekKey)!==false,collapsedClass=expanded?'':' week-collapsed';
-          const dayTone=`day-tone-${(new Date(x.date+'T12:00:00').getDay()+6)%7}`;
-          const sessionBucket=warningBucket(x.session),sessionClass=sessionBucket==='morning'?'session-morning':sessionBucket==='afternoon'?'session-afternoon':'';
           if(weekKey!==previousWeek){
-            rows.push(`<tr class="week-group-row ${weekTone}" data-week-key="${escapeHtml(weekKey)}"><td colspan="11"><button type="button" class="week-toggle" aria-expanded="${expanded}" onclick="toggleScheduleWeek('${encodeURIComponent(weekKey)}')"><span class="week-toggle-main"><span><i class="fa-solid fa-graduation-cap"></i> ${escapeHtml(info.academicYear)}</span><strong>Tuần ${week}</strong><span class="group-meta">${escapeHtml(info.periodLabel)}</span></span><i class="fa-solid fa-chevron-down week-toggle-icon" aria-hidden="true"></i></button></td></tr>`);
+            rows.push(`<tr class="week-group-row"><td colspan="11"><div class="week-group"><span><i class="fa-solid fa-graduation-cap"></i> ${escapeHtml(info.academicYear)}</span><strong>Tuần ${week}</strong><span class="group-meta">${escapeHtml(info.periodLabel)}</span></div></td></tr>`);
             previousWeek=weekKey;
             previousDate='';
           }
           if(x.date!==previousDate){
-            rows.push(`<tr class="day-group-row week-detail-row ${weekTone} ${dayTone}${collapsedClass}" data-week-key="${escapeHtml(weekKey)}"><td colspan="11"><div class="day-group"><strong>${escapeHtml(x.day||dayName(x.date))} · ${formatDate(x.date)}</strong><span class="day-count">${dayCounts.get(x.date)} lịch</span></div></td></tr>`);
+            rows.push(`<tr class="day-group-row"><td colspan="11"><div class="day-group"><strong>${escapeHtml(x.day||dayName(x.date))} · ${formatDate(x.date)}</strong><span class="day-count">${dayCounts.get(x.date)} lịch</span></div></td></tr>`);
             previousDate=x.date;
           }
           rows.push(`
-          <tr class="schedule-row week-detail-row ${weekTone} ${dayTone} ${sessionClass} ${x.important?'important-row ':''}${isK1Attention(x)?'k1-attention-row ':''}${collapsedClass}" data-week-key="${escapeHtml(weekKey)}">
+          <tr class="schedule-row ${x.important?'important-row ':''}${isK1Attention(x)?'k1-attention-row':''}">
             <td class="cell-time" data-label="Buổi / Giờ"><strong>${escapeHtml(x.session)}</strong><span class="cell-sub">${escapeHtml(x.start||'')}–${escapeHtml(x.end||'')}</span></td>
             <td class="cell-content" data-label="Nội dung"><strong>${escapeHtml(x.content)}</strong>${x.important?'<div class="small text-red" style="margin-top:5px"><i class="fa-solid fa-triangle-exclamation"></i> Quan trọng</div>':''}${x.issues?`<div class="small muted" style="margin-top:5px"><strong>Lưu ý:</strong> ${escapeHtml(x.issues)}</div>`:''}</td>
             <td class="cell-chair" data-label="Chủ trì">${escapeHtml(x.chair||'')}</td>
@@ -1497,11 +1443,9 @@
     function actionButtons(x){
       const baseEdit=canEditBase();
       const outcomeEdit=canUpdateOutcome(x)&&currentScheduleMode==='official';
-      const headcountEdit=canEditHeadcount();
       return `
         ${baseEdit?`<button class="btn btn-sm btn-secondary" title="Sửa lịch" aria-label="Sửa lịch" onclick="editSchedule(${x.id},false)"><i class="fa-solid fa-pen-to-square"></i></button>`:''}
         ${outcomeEdit?`<button class="btn btn-sm btn-success" title="Cập nhật kết quả" aria-label="Cập nhật kết quả" onclick="editSchedule(${x.id},true)"><i class="fa-solid fa-list-check"></i></button>`:''}
-        ${headcountEdit?`<button class="btn btn-sm btn-secondary" title="Cập nhật quân số" aria-label="Cập nhật quân số" onclick="editSchedule(${x.id},false,true)"><i class="fa-solid fa-users-pen"></i></button>`:''}
         ${isTonghop()?`<button class="btn btn-sm btn-secondary" title="Sao chép lịch" aria-label="Sao chép lịch" onclick="duplicateSchedule(${x.id})"><i class="fa-solid fa-copy"></i></button>`:''}
         ${canDeleteBase()?`<button class="btn btn-sm btn-danger" title="Xóa lịch" aria-label="Xóa lịch" onclick="deleteSchedule(${x.id})"><i class="fa-solid fa-trash-can"></i></button>`:''}
       `;
@@ -1521,13 +1465,12 @@
     }
     function setPage(p){currentPage=p;renderTable()}
 
-    function openScheduleModal(item=null,outcomeOnly=false,headcountOnly=false){
+    function openScheduleModal(item=null,outcomeOnly=false){
       if(!item&&!canEditBase()){toast('Bạn không có quyền nhập lịch mới.','error');return}
-      if(item&&!outcomeOnly&&!headcountOnly&&!canEditBase()){toast('Bạn không có quyền sửa nội dung lịch.','error');return}
+      if(item&&!outcomeOnly&&!canEditBase()){toast('Bạn không có quyền sửa nội dung lịch.','error');return}
       if(outcomeOnly&&!canUpdateOutcome(item)){toast('Bạn chỉ được cập nhật kết quả cho lịch mình tham gia.','error');return}
-      if(headcountOnly&&!canEditHeadcount()){toast('Bạn không có quyền cập nhật quân số.','error');return}
-      scheduleEditMode=headcountOnly?'headcount':outcomeOnly?'outcome':'base';
-      document.getElementById('modalTitle').textContent=headcountOnly?'Cập nhật quân số':outcomeOnly?'Cập nhật kết quả':item?'Sửa lịch hành chính':'Nhập lịch thủ công';
+      scheduleEditMode=outcomeOnly?'outcome':'base';
+      document.getElementById('modalTitle').textContent=outcomeOnly?'Cập nhật kết quả':item?'Sửa lịch hành chính':'Nhập lịch thủ công';
       document.getElementById('editId').value=item?.id||'';
       const date=item?.date||isoDate(0);
       document.getElementById('fWeek').value=item?.week||getWeekNumber(date);
@@ -1551,10 +1494,9 @@
 
       [...document.querySelectorAll('#scheduleModal input, #scheduleModal select, #scheduleModal textarea')].forEach(el=>{
         const editableOutcome=['fReport','fStatus','fProgress'].includes(el.id);
-        const editableHeadcount=el.id==='fMorningInfo';
-        el.disabled=headcountOnly?!editableHeadcount:outcomeOnly?!editableOutcome:false;
+        el.disabled=outcomeOnly?!editableOutcome:false;
       });
-      document.getElementById('fMorningInfo').readOnly=!headcountOnly;
+      document.getElementById('fMorningInfo').readOnly=true;
       scheduleEditorOpen=true;
       document.getElementById('scheduleModal').classList.remove('hidden');
       updateScheduleEditorButton();
@@ -1718,21 +1660,14 @@
       const date=document.getElementById('fDate').value;
       if(date)document.getElementById('fMorningInfo').value=effectiveHeadcount({date,session:document.getElementById('fSession').value});
     }
-    function editSchedule(id,outcomeOnly=false,headcountOnly=false){
+    function editSchedule(id,outcomeOnly=false){
       const item=activeSchedules().find(x=>x.id===id);
-      if(item) openScheduleModal(item,outcomeOnly,headcountOnly);
+      if(item) openScheduleModal(item,outcomeOnly);
     }
     function saveSchedule(){
       const id=Number(document.getElementById('editId').value)||Date.now();
       const list=activeSchedules();
       const existing=list.find(x=>x.id===id);
-
-      if(scheduleEditMode==='headcount'){
-        if(!existing||!canEditHeadcount()){toast('Bạn không có quyền cập nhật quân số.','error');return}
-        const idx=list.findIndex(x=>x.id===id);
-        list[idx]={...existing,morningInfo:document.getElementById('fMorningInfo').value.trim(),updatedBy:currentUser.name,updatedAt:new Date().toISOString()};
-        replaceActiveSchedules(list);persist();refreshAll();closeScheduleEditor();toast('Đã cập nhật quân số.');return;
-      }
 
       if(scheduleEditMode==='outcome'){
         if(!existing||currentScheduleMode!=='official'||!canUpdateOutcome(existing)){toast('Bạn chỉ được cập nhật kết quả cho lịch mình tham gia.','error');return}
@@ -1781,7 +1716,7 @@
         delegates:document.getElementById('fDelegates').value.trim(),
         duty:document.getElementById('fDuty').value.trim(),
         schoolDuty:document.getElementById('fDutySchool').value.trim(),
-        morningInfo:existing?.morningInfo||'',
+        morningInfo:'',
         report:document.getElementById('fReport').value.trim(),
         status:document.getElementById('fStatus').value,
         progress:Math.min(100,Math.max(0,Number(document.getElementById('fProgress').value)||0)),
@@ -2096,8 +2031,6 @@
     function attendanceReasonText(item){return item.reason==='Khác'?(item.otherReason||'Khác'):item.reason}
     function matchingAbsences(item){return attendanceReports.filter(report=>attendanceMatchesSchedule(report,item.date,item.session))}
     function effectiveHeadcount(item){
-      const manual=String(item?.morningInfo||'').trim();
-      if(manual)return manual;
       const reports=matchingAbsences(item);
       return reports.length?`Vắng: ${reports.map(report=>`${report.name} (${report.session}, ${attendanceReasonText(report)})`).join('; ')}`:'Đủ quân số';
     }
